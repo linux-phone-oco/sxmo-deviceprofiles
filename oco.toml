@@ -5,6 +5,7 @@ schema = 1
 [project]
 id = "linux-phone-oco/sxmo-deviceprofiles"
 name = "Sxmo device profiles for Linux phones"
+title = "Sxmo profiles"
 kind = "tool"
 parent = "linux-phone-oco"
 
