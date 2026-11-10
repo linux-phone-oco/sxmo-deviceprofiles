@@ -1,0 +1,27 @@
+name: check
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  profiles:
+    name: profiles
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: names, SPDX lines, shellcheck
+        run: |
+          set -e
+          bad=0
+          for f in profiles/*; do
+            case "$(basename "$f")" in
+              sxmo_deviceprofile_*,*.sh) ;;
+              *) echo "::error file=$f::a profile is named sxmo_deviceprofile_<compatible>.sh"; bad=1 ;;
+            esac
+            grep -q '^# SPDX-License-Identifier: AGPL-3.0-only$' "$f" || { echo "::error file=$f::missing the SPDX line (AGPL-3.0-only, as sxmo-utils)"; bad=1; }
+          done
+          ls profiles/*.sh >/dev/null
+          find profiles -name '*.sh' -print0 | xargs -0 shellcheck -s sh
+          exit $bad
