@@ -1,0 +1,4 @@
+{"id":"more-devices","title":"More phones","status":"open","note":"Profiles for other devices, made the same way.","opened":"2026-11-10"}
+{"id":"surya-hand-check","title":"Checked by hand","status":"in-progress","note":"Buttons verified by a person; vibration still to check (the first half-manual test).","opened":"2026-11-10"}
+{"id":"surya-profile","title":"surya's profile","status":"done","note":"Both panel variants; Sxmo loads it; scale 3.","opened":"2026-11-10"}
+{"id":"surya-upstream","title":"surya's profile upstream","status":"open","note":"To sxmo-utils by mailing list, signed off by its author.","opened":"2026-11-10"}

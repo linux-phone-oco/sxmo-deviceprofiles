@@ -1,0 +1,3 @@
+{"id":"sx-more","subject":"sxmo-deviceprofiles","ord":2,"title":"More phones","horizon":"perfection","readiness":8,"criteria":"backlog:more-devices","why":"Every phone the conveyor brings."}
+{"id":"sx-surya","subject":"sxmo-deviceprofiles","ord":1,"title":"surya's profile, checked","horizon":"working","readiness":7,"criteria":"backlog:surya-profile backlog:surya-hand-check","why":"Made from a running phone, checked by hand."}
+{"id":"sx-upstream","subject":"sxmo-deviceprofiles","ord":3,"title":"Upstream","horizon":"ongoing","readiness":9,"criteria":"backlog:surya-upstream","why":"Where every Sxmo user gets them."}
