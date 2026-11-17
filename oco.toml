@@ -9,7 +9,8 @@ title = "Sxmo profiles"
 kind = "tool"
 parent = "linux-phone-oco"
 
+# Its records - backlog, decisions, research, log, milestones and the rest - are kept in linux-phone-oco/docs,
+# the project's one database, each row naming this place (project = "linux-phone-oco/sxmo-deviceprofiles"), and written there
+# through tad's named records (tad r NAME --project sxmo-deviceprofiles ...). The record of its work is its commits and pull
+# requests. Decided 2026-11-17: docs' decision 2026-11-17-one-database.
 [exports]
-glimpses = "oco/glimpses.json"
-backlog = "oco/backlog.json"
-milestones = "oco/milestones.json"
